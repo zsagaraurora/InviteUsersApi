@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Internal App, Z</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="inviteusers.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+</head>
+
+<body>
+    <div class="newsletter-subscribe">
+        <div class="container">
+            <div class="intro">
+                <h2 class="text-center">Upload CSV to Aurora Invite Users API</h2>
+                <p class="text-center">This is an internal Aurora Solar Application which allows you to bulk upload user information and create users via the Invite Users API</p>
+            </div>
+            <form class="form-inline" method="post">
+                <div class="form-group"><input class="form-control" id="uploadBtn" type="email" name="email" placeholder="Click to upload CSV"></div>
+                <div class="form-group"><button class="btn btn-primary" type="submit">Add CSV </button></div>
+            </form>
+        </div>
+
+        <div class="container mt-5 mb-5 d-flex justify-content-center">
+    <div class="card px-1 py-4">
+        <div class="card-body">
+            <h6 class="information mt-4">Please provide the following API information from Aurora: </h6>
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="form-group">
+                        <!-- <label for="name">Name</label> --> <input class="form-control" id="tenantID" type="text" placeholder="Tenant-id"> </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="form-group">
+                        <div class="input-group"> <input class="form-control" type="text" placeholder="Bearer Token"> </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12">
+                  <div class="form-check">
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                      <label class="form-check-label" for="defaultCheck1">
+                        Production
+                      </label>
+                      </div>
+                      <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" id="defaultCheck2">
+                      <label class="form-check-label" for="defaultCheck2">
+                        Sandbox
+                      </label>
+                      </div>
+                </div>
+            </div>
+            <div class=" d-flex flex-column text-center px-5 mt-3 mb-3"> <small class="agree-text">CSV data is not stored, it's deleted after firing API call</small> <a href="#" class="terms">Notion Documentation</a> </div> <button class="btn btn-primary btn-block confirm-button">Confirm</button>
+        </div>
+    </div>
+</div>
+    </div>
+
+
+    <div class="footer-clean">
+        <footer>
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-sm-4 col-md-3 item">
+                        <h3>Other Apps</h3>
+                        <ul>
+                            <li><a href="#">Our Github</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-4 col-md-3 item">
+                        <h3>About</h3>
+                        <ul>
+                            <li><a href="#">Notion Doc on this</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-4 col-md-3 item">
+                        <h3>Careers</h3>
+                        <ul>
+                            <li><a href="#">No Budget to hire</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 item social"><a href="#"><i class="icon ion-social-facebook"></i></a><a href="#"><i class="icon ion-social-twitter"></i></a><a href="#"><i class="icon ion-social-snapchat"></i></a><a href="#"><i class="icon ion-social-instagram"></i></a>
+                        <p class="copyright">Made in Colorado © 2022</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
